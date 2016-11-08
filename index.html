@@ -1,28 +1,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
-	<meta name="author" content="Garrett Jones">
-	<meta name="keywords" content="optimal control, oculomotor system, saccades, rendering, strands, ocean runner, potatoes">
+<head>
+	<meta name="author" content="Duo Li">
+	<meta name="keywords" content="Duo Li, strand, computer graphics, physically based simulation, biomechanical simulation">
 	<meta name="description" content="profile page">
 	<meta name="robots" content="all">
 
 	<title> Duo Li's Homepage </title>
-
-	<script type="text/javascript" async="" src="./Garrett Jones' Homepage_files/ga.js"></script><script type="text/javascript"></script>
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-23229410-2']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-
-
-<script language="javascript">
+  <script language="javascript">
     if (document.images) {
        var panada = new Image();
        panada.src = "./images/big_head_2.png";
@@ -41,11 +25,34 @@
     		document["portrait"].src = panada.src;
     	}
     }
-</script>
+  </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    	// hide #back-top first
+    	$("#back-top").hide();
+    	// fade in #back-top
+    	$(function () {
+    		$(window).scroll(function () {
+    			if ($(this).scrollTop() > 700) {
+    				$('#back-top').fadeIn();
+    			} else {
+    				$('#back-top').fadeOut();
+    			}
+    		});
+    		// scroll body to 0px on click
+    		$('#back-top a').click(function () {
+    			$('body,html').animate({
+    				scrollTop: 0
+    			}, 800);
+    			return false;
+    		});
+    	});
+    });
+  </script>
+</head>
 
-
-
-<body onload="window.defaultStatus=Duo Li's info-tele; info-tele&#39;;" id="css-duo-li">
+<body id="css-duo-li">
 
 	<style type="text/css" media="all">
 		@import "menu.css";
@@ -108,6 +115,25 @@
 						</span> </p>
 				</div>
 			</div>
+      <div id="spacer"></div>
+			<p class="categoryTitle"><span><a name="Projects">Research Projects</a></span></p>
+			<div id="projectsPanel">
+				<div id="project">
+					<div id="projectTeaserAlt">
+						<img src="./projects/thesis/hand_rest.png" width="128" height="128">
+					</div>
+					<div id="projectDescriptionAlt">
+						<p class="projectTitle">
+							<span>
+							<a href="https://open.library.ubc.ca/collections/ubctheses/24/items/1.0052208"> Biomechanical Simulation Of The Hand Musculoskeletal System And Skin</a>
+							<!--<img src="./images/icon-new.png"  border= "0" width="36" height="30">-->
+							</span>
+						</p>
+						<p class="proceedings"><span>
+						MSc. Thesis
+						</span></p>
+					</div>
+				</div>
 
 			<div id="spacer"></div>
 			<p class="categoryTitle"><span><a name="Projects">Research Projects</a></span></p>
@@ -145,8 +171,8 @@
 						<p class="projectTitle">
 							<span>
 							Anatomically based Hand Simulation
+              <a href="./projects/hand/keyboard.wmv"><img src="./images/icon-mov.png" width="23" height="23" border= "0"></a>
 							</span>
-
 						</p>
 						<p class="proceedings"><span>
 							Developed Strands++: a biomechinical engine
@@ -351,10 +377,10 @@
 		<div id="spacer"></div>
 		<div id="spacer"></div>
 		<hr>
-		Last Update: Apr. 2013
-		<div id = "clustermap">
+		Last Update: Dec. 2015
+		<!--<div id = "clustermap">
 		<div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://www.cs.ubc.ca/~duoli/', 'user' : 1090603, 'server' : '2', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2013-04-20', 'lang' : 'zh', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www2.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www2.clustrmaps.com/user/6ac10a42b"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/www.cs.ubc.ca-~duoli--thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
-		</div>
+    </div>-->
 
 		<style type="text/css" media="all">
 			@import "back-top.css";
