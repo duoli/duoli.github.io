@@ -1,0 +1,174 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-top: 0;
+	text-align: justify;
+}
+
+h1 {
+	font: normal 2.8em georgia, sans-serif;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #000;
+}
+
+h3 {
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	color: #7D775C;
+}
+
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #B7A5DF;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #9685BA;
+}
+
+acronym {
+	border-bottom: none;
+}
+
+/* specific classes */
+.p1 {
+}
+
+.p2 {
+	margin-left: 8px;
+	color: #000;
+}
+
+.projectTitle {
+	font: 135% georgia, sans-serif;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.categoryTitle{
+	font: 165% georgia, sans-serif;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.authorList {
+	font: 135% georgia, sans-serif;
+	margin-bottom: 10px;
+}
+
+.proceedings {
+	font: italic 135% georgia, sans-serif;
+}
+
+/* specific divs */
+#container {
+	/*padding: 0 124px 0 124px; *//* top, right, bottom, left*/
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 800px;
+	min-width: 800px;
+}
+
+#mainColumn {
+	position: relative;
+	float: left;
+}
+
+#contactInfo {
+	position: relative;
+	background: #AAA;
+	clear: left;
+	margin-top: 0;
+}
+
+#title {
+	position: relative;
+	clear: left;
+}
+
+#aboutMe {
+	position: relative;
+	float: left;	
+}
+
+#pictureSpace {
+	position: relative;
+	float: left;
+}
+
+#picture {
+	margin-top: 16px;
+	margin-bottom: 0;
+	width: 256px;
+	height: 206px;
+}
+
+
+#quickSummary {
+	position: relative;
+	margin-left: 285px;
+}
+
+#spacer {
+	clear: both;
+	width: auto;
+	height: 16px;
+}
+
+#projectsPanel {
+	position: relative;
+	clear: left;
+}
+
+#extraColumn {
+	position: relative;
+}
+
+#project {
+	position: relative;
+	clear: left;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+#projectTeaser {
+	position: relative;
+	width: 128px;
+	height: 128px;
+	float: left;
+	border-style: solid;
+	border-width: 5px;
+	margin-right: 32px;
+}
+
+#projectTeaserAlt {
+	position: relative;
+	width: 128px;
+	height: 128px;
+	float: right;
+	border-style: solid;
+	border-width: 5px;
+	margin-left: 32px;
+}
+#projectDescription {
+	position: relative;
+}
+#category{
+	position: relative;
+}
