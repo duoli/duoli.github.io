@@ -1,0 +1,220 @@
+
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                                             % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{3cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{\textbf{Duo}}
+\familyname{\textbf{Li}}
+%\title{{Curriculum Vitae}}                    % optional, remove the line if not wanted
+\address{}{Sunnyvale, CA, USA, 94089}    % optional, remove the line if not wanted
+%\phone{13488810349}                        % optional, remove the line if not wanted
+%\fax{13488810349}                          % optional, remove the line if not wanted
+\email{tuoxieman@gmail.com}               % optional, remove the line if not wanted
+\mobile{206-409-8916}                        % optional, remove the line if not wanted
+\homepage{www.duo-li.com}                          % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\vspace{-5mm}
+\section{\textsc{Education}}
+
+
+\cventry{Sept.2010--Mar.2013}{University of British Columbia (UBC)}{Computer Science}{Vancouver, BC}{}{\textsl{\textbf{Master of Science in Computer Science (Thesis-based)}}
+\\-- GPA: 4.0/4.3 \\-- Supervisor: Dinesh K. Pai \\}  % arguments 3 to 6 can be left empty
+\cventry{Sept.2005--Jun.2009}{Beijing Institute of Technology (BIT)}{School of Software}{Beijing, China}{}{\textsl{\textbf{BSc(Eng) in Software Engineering}} 
+\\ -- Graduated with the honor: \textit{Outstanding Graduate of Beijing}
+\\ -- GPA: 89/100, Rank: 7th/220, (1st/220 in the third year)}
+
+\section{\textsc{Work Experience}}
+\cventry{Oct.2015--Present}{Software Engineer}{Remarketing Ads Quality}{Google}{Mountain View, USA}{
+\begin{itemize}
+\item My work brought Google 55 million \$ ARR(annual recurring revenue);
+\item My projects practically touched the complete Google display Ads training/serving stacks;
+\item Improved the accuracy of pCTR and pCVR model with better signals and infrastructure;
+\item Improved remarketing ads inventory with better user data interpretation.
+\end{itemize}
+}
+\cventry{July.2014--Sept.2015}{Software Engineer/Tech Lead}{Social Shopping Tech.}{Amazon}{Seattle, USA}{
+\begin{itemize}
+\item Developed systems to extract product attributes (e.g. image quality attribute for camera product) and attribute-level sentiment summaries from customer reviews;
+\item Developed systems to massively collect product attribute ratings via user solicitation;
+\item Developed systems to consume above data to improve customer shopping experience;
+\item Developed infrastructures and algorithms to improve customer review ranking and star rating systems of Amazon.
+\end{itemize}
+}
+\cventry{Mar.2013--Jun.2014}{Software Engineer}{Social Shopping Tech.}{Amazon}{Vancouver, Canada}{
+\begin{itemize}
+\item Developed systems to acquire and consume large amount of customer ratings cross desktop and mobile, our system collected millions of customer rating daily in live experiment. It also collected 10x of ratings compared with review. 
+\end{itemize}
+}
+
+\cventry{Jun.2012--Aug.2012}{Intern}{Search Experience Team}{Amazon}{Seattle, USA}{
+\begin{itemize}
+\item Data Analysis, algorithm design, and implementation of short null result queries handling;
+\item My project lead to several millions \$ of gross revenue in a month after launch.
+\end{itemize}
+}
+
+\cventry{Jan.2011--Mar.2013}{Research Assistant}{Sensorimotor Systems Lab}{UBC}{Vancouver, Canada}{
+\begin{itemize}
+\item Biomechanical simulation of musculoskeletal systems with novel numeric methods
+\end{itemize}
+}
+
+\cventry{May$\ $2009--May$\ $2010}{Research Assistant}{State Key Lab of Virtual Reality}{Beihang Univ.}{China}{
+\begin{itemize}
+\item Virtual surgery simulation of blood and soft tissue
+\end{itemize}
+}
+
+\cventry{Nov.2006--Jun.2009}{Co-founder}{PanGu Gear Game Studio}{}{Beijing, China}{ 
+\begin{itemize}
+\item Casual game platform and 3D FPS game development
+\end{itemize}
+}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\renewcommand\refname{\textsc{Publications}}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+\begin{thebibliography}{1}
+
+\bibitem{Wang:computer}
+
+\textbf{Duo Li}, Shinjiro Sueda, Debanga R. Neog, Dinesh Pai, 
+\newblock Thin Skin Elastodynamics, 
+\newblock {\em In Proc.\textbf{SIGGRAPH} 2013, \textbf{ACM Transaction on Graphics}}, vol. 32, no. 4, \href{http://www.cs.ubc.ca/research/thinskinelastodynamics/}{[link]},
+
+\textbf{Duo Li},
+\newblock Biomechanical Simulation of the Hand Musculoskeletal System and Skin, 
+\newblock {\em MSc. Thesis}, 2013, \href{https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0052208}{[link]},
+
+%Hexiang Wang, Aimin Hao, \textbf{Duo Li}, and Xuemei Liu.
+%\newblock Real-time cutting method for soft tissue based on tled algorithm.
+%\newblock In {\em Computer Engineering and Technology (ICCET), 2010 2nd
+%  International Conference on}, volume~3, pages 393--396, april 2010.
+
+\end{thebibliography}
+
+\section{\textsc{Other Selected Projects}}
+%\subsection{Search}
+\cventry{Jun.2012--Aug.2012}{Short Null Result Query Correction}{Intern Project}{Amazon}{}{
+\begin{itemize}
+\item Analyzed short null result user search queries and designed several correction strategies
+\item Designed and implemented 3 versions of word splitting algorithms and generated data for other corrections
+\end{itemize}
+}
+\subsection{Simulation, Animation \& Machine Learning}
+%\cventry{Mar.2011--May.2012}{Augmented Wrinkling for Skin Simulation}{}{}{}{
+%\begin{itemize}
+%\item Augmenting the traditional skinning with automatic post-processing wrinkling generation
+%\end{itemize}
+%}
+\cventry{Mar.2012--Feb.2013}{Thin skin elastodynamics}{}{}{}{
+\begin{itemize}
+\item Developed a novel method to simulate the skin as high constrained thin elastodynamic material with Euerlian discretization to overcome the drawbacks of traditional Lagrangian or kinematic skin simulation
+\item This methods is both fast and physically realistic 
+\end{itemize}
+}
+\cventry{Sep.2011--Jan.2012}{Anatomically based Hand Simulation}{}{}{}{
+\begin{itemize}
+\item Developed a complete physics engine including strand based muscle simulator, rigid body dynamics, staggered projection based friction, basic collision detection and etc.
+\item A complete pipeline includes C++ simulator, Blender modeling plugin, and render plugin
+\end{itemize}
+}
+\cventry{Mar.2011--May$\ $2011}{Reinforcement Learning in Latent Space: Data Driven Inverse Kinematics}{}{}{}{
+\begin{itemize}
+\item Developed a method to handle 'the curse of dimensionality' problem in reinforcement learning with Gaussian Process Latent Variable Model (GPLVM) for Inverse Kinematics
+\end{itemize}
+}
+\cventry{Sep.2011--Oct.2011}{Learning to Jump with Muscles}{}{}{}{
+\begin{itemize}
+\item Auto-generating jumping movements of input musculoskeletal models with Covariance Matrix Adaptation (CMA)
+\end{itemize}
+}
+
+\subsection{Games \& Tools}
+
+
+%\cventry{Jan.2012}{Mesh Processing Plugins for Meshlab}{}{}{}
+%{}
+
+
+\cventry{Jun.2007--Oct.2007}{Survive: A 3D FPS Game and a compact engine}{}{}{}{
+\begin{itemize}
+\item Developed a compact game engine, and a 3D FPS game 'Tank Battle' based on this engine
+\end{itemize}
+}
+
+\cventry{Nov.2006--Jan.2007}{XJOY Game Arena}{}{}{}
+{\begin{itemize}
+\item Developed a casual platform for mini multiplayer games and mini games upon this platform
+\end{itemize}}
+
+%\cventry{May$\ $2008--Jul.2008}{P2P Virtual Ethernet and the Communication Protocol }{}{}{}
+%{\begin{itemize}
+%\item Simulating a virtual Ethernet, hosts from different networks are able to work as in %a same LAN
+%\end{itemize}}
+%\cventry{Jun.2007--Jul.2007}{Particle System Editor based on MFC}{}{}{}{}
+
+\section{\textsc{Technical Skills}}
+\cvline{Programming}{\small{C/C++, JAVA (Proficient); Javascript; MATLAB, C\#, PHP, SQL, Perl}}
+%\cvline{Platform}{\small{Windows, Linux}}
+\cvline{Tools \& SDK}{\small{AWS Systems, OpenGL, DirectX; Git, \LaTeX, Blender, SVN, Perforce, Meshlab}}
+%\cvline{Art}{\small{3D Sketching, Chinese ink painting}}
+
+\section{\textsc{Selected Awards \& Honors}}
+\cventry{Apr.2009}{Outstanding Graduate of Beijing}{}{}{}{Issued by \textbf{Ministry of Education of Beijing \& BIT}}
+\cventry{Apr.2008}{National Scholarship}{}{}{}{Issued by \textbf{Ministry of Education of China}}
+\cventry{Apr.2008}{Microsoft Sci. and Tech. Innovation Student Award Scholarships}{}{}{}{Issued by \textbf{Microsoft \& BIT}}
+\cventry{Apr.2008}{Microsoft Sci. and Tech. Innovation Group Scholarships}{}{}{}{Issued by \textbf{Microsoft \& BIT}}
+\cventry{Apr.2007}{National Scholarship}{}{}{}{Issued by \textbf{Ministry of Education of China}}
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%%% Local Variables: %%%
+%%% mode:LaTeX       %%%
+%%% coding:utf-8     %%%
+%%% End:             %%%
